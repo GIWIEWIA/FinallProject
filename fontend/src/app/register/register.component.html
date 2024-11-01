@@ -1,0 +1,38 @@
+<div class="Reset">
+    <div class="content">
+      <div class="head">
+        <h1>Register</h1>
+      </div>
+      <div class="form">
+        <div class="bottom">
+          <input type="email" placeholder="Email" [(ngModel)]="user.email">
+          <input type="password" placeholder="Password" [(ngModel)]="user.password">
+          <input type="text" placeholder="First Name" [(ngModel)]="user.firstName">
+          <input type="text" placeholder="Last Name" [(ngModel)]="user.lastName">
+          <input type="number" placeholder="Phone Number" [(ngModel)]="user.phone">
+          <input type="illness" placeholder="illness" [(ngModel)]="user.illness">
+          <input type="allergies" placeholder="allergies" [(ngModel)]="user.allergies">
+          <input type="religion" placeholder="religion" [(ngModel)]="user.religion">
+          <input type="foodallergies" placeholder="foodallergies" [(ngModel)]="user.foodallergies">
+          <input type="contact" placeholder="contact" [(ngModel)]="user.contact">
+        </div>
+        <div class="text-p">
+          <p (click)="navigateToLogin()">Login Here</p>
+        </div>
+      </div>
+      <button (click)="onSubmit()">Register</button>
+      <!-- <div class="text-p1">
+        <p><a href="........."></a>Or Login Using</p>
+      </div> -->
+  
+      <!-- <div class="social">
+        <a href="#" class="social-button"><img src="../../assets/imgs/register/facebook.svg" alt="Facebook"></a>
+        <a href="#" class="social-button"><img src="../../assets/imgs/register/google.svg" alt="Google"></a>
+        <a href="#" class="social-button"><img src="../../assets/imgs/register/line.svg" alt="LINE"></a>
+      </div> -->
+      <!-- <div class="text-p2">
+        <p><a href=""></a>Continue as Guest</p>
+      </div> -->
+    </div>
+  </div>
+  

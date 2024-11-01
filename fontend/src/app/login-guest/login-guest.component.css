@@ -1,0 +1,24 @@
+.dta{
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    padding: 200px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.btn button{
+    cursor: pointer;
+    color: white;
+    font-size: 25px;
+    width: 370px;
+    height: 60px;
+    border-radius: 10px;
+    border: solid rgb(207, 204, 204) 1px;
+    background: linear-gradient(to bottom, #114201 -90%, #2BA803);
+}

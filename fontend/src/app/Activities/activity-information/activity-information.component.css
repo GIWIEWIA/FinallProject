@@ -1,0 +1,180 @@
+.activity-f {
+    padding: 44px;
+    /* width: 100%; */
+    /* border: solid black 1px; */
+}
+
+.data-c {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 10px;
+    
+    /* border: solid black 1px */
+}
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.data-c img {
+    width: 100%;
+}
+.dis{
+    margin-left: 20px;
+}
+
+
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 90px;
+    
+}
+.data h1{
+text-align: center;
+font-size: 32px;
+}
+
+.data{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+.summer{
+    margin-left: 20px;
+}
+
+.sumdata{
+    
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.sm-da p{
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.sm-da span{
+    margin-top: 125px;
+    margin-left: 20px;
+}
+.flextext{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+.text1 {
+    /* border: 2px solid green; */
+    width: fit-content
+}
+.text2 {
+    /* border: 2px solid yellow; */
+    width: fit-content
+
+}
+.griditem{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    padding: 10px;
+}
+.item{
+    display: flex;
+    align-items: end;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    /* width: 50%; */
+    /* margin-left: 32.5em; */
+}
+
+/* General table styling */
+.dtn {
+    padding: 0px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+table {
+    width: 100%; /* Ensures the table takes full width of its container */
+    table-layout: fixed; /* Allows setting specific widths for columns */
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    background-color: #f7f3f7;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(1, 1, 1, 1.1);
+    overflow: hidden;
+}
+
+th, td {
+    text-align: center;
+    padding: 10px;
+    border-right: 1px solid #ddd; /* Only right borders remain */
+}
+
+th {
+    background-color: #d4c2d9;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+td {
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Handle overflow text with ellipsis (...) */
+}
+
+/* Column width adjustments */
+th:nth-child(1), td:nth-child(1) { /* No. column */
+    width: 5%; /* Smaller width for "No." */
+}
+
+th:nth-child(4), td:nth-child(4) { /* Information column */
+    width: 10%; /* Smaller width for "Information" */
+}
+
+th:nth-child(5), td:nth-child(5) { /* Files column */
+    width: 10%; /* Smaller width for "Files" */
+}
+
+th:nth-child(6), td:nth-child(6) { /* Status column */
+    width: 8%; /* Smaller width for "Status" */
+}
+
+/* Reduced width for Activity Name and Date */
+th:nth-child(2), td:nth-child(2) { /* Activity Name column */
+    width: 15%; /* Reduce width for "Activity Name" */
+}
+
+th:nth-child(3), td:nth-child(3) { /* Date column */
+    width: 12%; /* Reduce width for "Date" */
+}
+
+/* Remove horizontal borders */
+tr:first-child th {
+    border-top: none;
+}
+
+td, th {
+    border-top: none; /* Remove top border */
+    border-bottom: none; /* Remove bottom border */
+}
+
+/* Styling for the row number (first column) */
+td:first-child {
+    font-weight: bold;
+}
+
+
+
+
+

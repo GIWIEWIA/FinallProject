@@ -1,0 +1,24 @@
+<div class="carousel">
+
+    <div class="carousel-content">
+    <img *ngFor="let activity of activities" class="g-item" [src]="activity.activityImageUrl" alt="Activity Image">
+  </div>
+  <!-- <div >
+      <img class="g-item" src="../../../../assets/imgs/carousal/ชมรมกระดานดำ มหาวิทยาลัยพะเยา.png" alt="" data-index="1">
+      <img class="g-item" src="../../../../assets/imgs/carousal/Blue Pink Playful Illustrated Volunteer Recruitment Campaign Presentation (1).png" alt="" data-index="2">
+      <img class="g-item" src="../../../../assets/imgs/carousal/Yellow Illustrative Charity Event Landscape Banner (1).png" alt="" data-index="3">
+      <img class="g-item" src="../../../../assets/imgs/carousal/สีเขียว และ สีน้ำตาล น่ารัก ภาพประกอบ อาสาสมัคร ครู สอนหนังสือ พรีเซนเทชั่น .png" alt="" data-index="4">
+      <img class="g-item" src="../../../../assets/imgs/carousal/Blue And White Simple Volunteer Needed Poster (1).png" alt="" data-index="5">
+  </div> -->
+  <div class="img-controls">
+      <button class="prev" (click)="prevSlide()">
+          <i class="fa fa-arrow-left" aria-hidden="true"></i>
+      </button>
+      <div class="dots">
+          <div class="dot" *ngFor="let i of itemIndexes" [ngClass]="{'active': i === currentIndex}"></div>
+      </div>
+      <button class="next" (click)="nextSlide()">
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+      </button>
+  </div>
+</div>

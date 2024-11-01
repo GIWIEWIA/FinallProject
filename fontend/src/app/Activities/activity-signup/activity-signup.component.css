@@ -1,0 +1,36 @@
+.activity-s {
+    padding: 44px;
+    /* width: 100%; */
+    /* border: solid black 1px; */
+}
+
+.data-s {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    
+    /* border: solid black 1px */
+}
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.data-s img {
+    width: 100%;
+    height: 200px;
+    
+    object-fit: cover;
+}
+.dis{
+   
+    margin-left: 20px;
+}
+
+.dis p{
+    width: 95%;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,33 @@
+<!-- <p>sign-fotm works!</p> -->
+<div class="content">
+    <div class="head" *ngIf="status == true">
+        <h1>Signup Form</h1>
+    </div>
+
+    <div *ngIf="status == true" class="form">
+        <!-- บน -->
+        <div class="top">
+            <input type="text" placeholder="FirstName" [(ngModel)]="participantDetail.firstName" name="firstName" required>
+            <input type="text" placeholder="lastName" [(ngModel)]="participantDetail.lastName" name="lastName" required>
+        </div>
+
+        <!-- ล่าง -->
+        <div class="bottom-form">
+            <input type="text" placeholder="Phone Number" [(ngModel)]="participantDetail.phoneNumber" name="phoneNumber" required>
+            <input type="text" placeholder="Allergies" [(ngModel)]="participantDetail.allergies" name="allergies">
+
+            <input type="text" placeholder="Medical History" [(ngModel)]="participantDetail.medicalHistory" name="medicalHistory">
+            <input type="text" placeholder="Emergency Contact" [(ngModel)]="participantDetail.emergencyContact" name="emergencyContact" required>
+        </div>
+    </div>
+    <div *ngIf="status == false" class="button-Volunteer">
+
+        <div class="bottom-form2">
+            <h1>THIS FORM HAS BEEN CLOSED BY ADMIN</h1>
+        </div>
+
+    </div>
+    <button class="btn" *ngIf="status == false" (click)="goToInformation()">Volunteer Lists</button>
+    <button class="btn" *ngIf="status == true" (click)="submitForm()">Signup</button>
+
+</div>

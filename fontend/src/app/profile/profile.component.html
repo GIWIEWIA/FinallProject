@@ -1,0 +1,68 @@
+<!-- <app-nevbar></app-nevbar> -->
+<div class="Profile">
+    <div class="data">
+        <div><h1>Profile</h1></div>
+        <div class="bubble">
+            <div class="PG1">
+                <a href="#">
+                    <img src="../../assets/imgs/profile/proflies.svg" alt=""width="120px">
+                </a>
+            </div>
+            <div class="PG2">
+                <h3>{{ user.firstName }} {{ user.lastName }}</h3>
+            </div>
+            <div class="PG3">
+                <a href="#">
+                    <img src="../../assets/imgs/profile/pen.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="content">
+                <h2>Personal Information</h2>
+                <div class="PG4">
+                    <a href="#">
+                        <img src="../../assets/imgs/profile/pen.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="border"></div>
+            <div class="PG4">
+                <div class="left"> <b>E-Mail :{{ user.email }}</b></div>
+                <div class="right"><b>Phone Number :{{ user.phone }}</b></div>
+                
+            </div>
+            <div class="border"></div>
+
+            <div class="PG4">
+                <div class="left"> <b>Illness : Asthma  </b></div>
+                <div class="right"><b>Emergency Contact : {{ user.contact }}</b></div>
+                
+            </div>
+            <div class="border"></div>
+
+            <div class="PG4">
+                <div class="left"> <b>Allergies : {{ user.allergies}} </b></div>
+                <div class="right"><b>Religion : {{user.religion}}</b></div>
+    
+            </div>
+            <div class="border"></div>
+
+            <div class="PG4">
+                <div class="left"> <b>Food Allergies : {{user.foodallergies}} </b></div>
+
+            </div>
+            <div class="border"></div>
+            <p>User Since : 08/07/2023</p>
+
+        </div>
+    </div>
+    
+</div>
+<app-footer></app-footer>
+
+
+
+

@@ -1,0 +1,83 @@
+
+
+.Profile {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* ให้เนื้อหาโปรไฟล์ใช้ความสูงเต็มหน้าจอ */
+}
+
+h1{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    letter-spacing: 0.1em;
+}
+.data{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 33px;
+    margin-left: 50pxsd;
+    
+}
+.bubble{  
+    display: flex;
+    align-items: center;
+    gap: 20px;   
+}
+.card{
+    width: 80%;
+    padding: 10px;
+    border: 1px dashed line;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 4px 1px rgba(10, 9, 9, 0.568);
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px; 
+    
+    
+}
+.border{
+    border: 1px solid rgb(163, 159, 159);
+    width: 100%;
+    display: flex;
+    
+  
+}
+.PG4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+
+
+.card p{
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.right{
+    width: 300px;
+    text-align: left;
+}
+
+
+
+
+

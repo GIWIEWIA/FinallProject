@@ -1,0 +1,128 @@
+.content {
+    /* border:  solid black 1px; */
+    padding: 100px 80px;
+
+    /* font-family: 'Julius Sans One', sans-serif; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.total {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    /* Adjusted font size for smaller screens */
+}
+
+.data {
+
+    flex-direction: column;
+    row-gap: 30px;
+    /* Reduced gap */
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.data button {
+    width: 200px;
+
+}
+
+.box {
+
+    display: flex;
+    flex-direction: row;
+    /* Change to column for smaller screens */
+    align-items: center;
+    /* Center content */
+    gap: 20px;
+    /* Reduced gap */
+}
+
+.box img {
+    /* object-fit: contain; */
+    width: 200px;
+    /* Adjusted width for smaller screens */
+    height: 300px;
+    /* Adjusted height for smaller screens */
+}
+
+.discipstion {
+    /* Allow width to adjust */
+    row-gap: 10px;
+    word-wrap: break-word;
+    /* Reduced gap */
+}
+
+.discipstion p {
+    width: 500px;
+    height: 200px;
+    margin-top: 0;
+    font-size: 14px;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* Adjusted font size */
+}
+
+.discipstion h3 {
+    font-size: 24px;
+    /* Adjusted font size */
+}
+
+.line {
+    border: solid rgb(118, 117, 117) 0.5px;
+    width: 100%;
+    /* Ensure line takes full width */
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 800px) {
+
+    .discipstion {
+        width: 600px;
+        /* Set width for larger screens */
+    }
+
+    h2 {
+        font-size: 36px;
+        /* Original font size */
+    }
+
+    .data {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 30px;
+        /* Reduced gap */
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    .data button {
+        width: 200px;
+
+    }
+
+    .box {
+
+        display: flex;
+        flex-direction: column;
+        /* Change to column for smaller screens */
+        align-items: center;
+        /* Center content */
+        gap: 20px;
+        /* Reduced gap */
+    }
+
+    .discipstion  {
+    padding: 12px;
+    }
+    
+}

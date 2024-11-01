@@ -1,0 +1,22 @@
+<nav>
+    <div class="container">
+        <div class="logo">
+            <img src="../../assets/imgs/navbar/logo.png" alt="Logo">
+        </div>
+        <ul class="menu" [class.active]="menuOpen">
+            <li><a routerLink="/home">Home</a></li>
+            <li><a routerLink="/activity">Activities</a></li>
+            <li *ngIf="isAdmin"><a routerLink="/admin-list">Admin</a></li>
+        </ul>
+        <div class="profile">
+            <a href="#" (click)="navigateToProfile($event)">
+                <img class="profileimg" src="../../assets/imgs/profile/proflies.svg" alt="Profile">
+            </a>
+        </div>
+        <div class="hamburger" (click)="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
